@@ -1,5 +1,7 @@
-<html>
-    {% for post in object_list %}
-        {{post.title}}
-    {% endfor %}
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+{% for post in object_list %}
+    {{post.title}}
+{% endfor %}
+{%endblock%}
