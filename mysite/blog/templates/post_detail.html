@@ -1,5 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
 <h1>{{post.title}}</h1>
 <h2>By {{post.created_by}}</h2>
 <hr/>
 <div>{{post.body}}</div>
 <a href="{% url 'list' %}">Back</a>
+{% endblock %}
