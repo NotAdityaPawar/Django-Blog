@@ -9,3 +9,8 @@ class PostListView(generic.ListView):
 class PostDetailView(generic.DetailView):
     model = Post
     template_name = "post_detail.html"
+
+class PostCreateView(generic.CreateView):
+    model  = Post
+    template_name = "add_post.html"
+    fields = "__all__"
